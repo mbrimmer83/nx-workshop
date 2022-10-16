@@ -6,6 +6,7 @@ import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -25,6 +26,7 @@ import { RouterModule } from '@angular/router';
     ),
     MatCardModule,
     StoreUiSharedModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
