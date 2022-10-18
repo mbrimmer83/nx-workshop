@@ -12,7 +12,9 @@ export class AppComponent {
   constructor(
     private http: HttpClient,
     @Inject('baseUrl') private baseUrl: string
-  ) {}
+  ) {
+    console.log('AppComponent constructor');
+  }
 
   title = 'Board Game Hoard';
   formatRating = formatRating;
