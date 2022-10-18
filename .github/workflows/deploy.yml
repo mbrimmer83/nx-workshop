@@ -20,4 +20,4 @@ jobs:
       - run: npx nx build store --configuration=production
       - run: npx nx build api --configuration=production
       - run: npx nx deploy store
-      - run: npx nx deploy api
+      - run: npx nx deploy api --prod
